@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="static/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<header>
+		<nav class="navbar navbar-inverse">
+  			<div class="container-fluid">
+    			<div class="navbar-header">
+      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>                        
+      			</button>
+      
+    			</div>
+    			<div class="collapse navbar-collapse" id="myNavbar">
+      				<ul class="nav navbar-nav">
+        				<li class="active"><a href="/">Home</a></li>
+        				<li><a href="about">About-Us</a></li>
+        				<li><a href="contact">Contact</a></li>
+      				</ul>
+      				<ul class="nav navbar-nav navbar-right">
+        				<li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      				</ul>
+    			</div>
+  			</div>
+		</nav>
+		
+</header>
+<section>
+	<div class="jumbotron">
+  		<div class="container text-center">
+    		{% block jumbotron %}
+    		{% endblock %}
+  		</div>
+	</div>
+<h1><center>Our Placements</center></h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				{% block content1 %}
+				{% endblock %}				
+				
+			</div>
+			<div class="col-sm-3">
+				{% block content2 %}
+				{% endblock %}				
+				
+			</div>
+			<div class="col-sm-3">
+				{% block content3 %}
+				{% endblock %}				
+				
+			</div>
+			<div class="col-sm-3">
+				{% block content4 %}
+				{% endblock %}				
+				
+			</div>		
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				{% block content5 %}
+				{% endblock %}				
+				
+			</div>
+			<div class="col-sm-3">
+				{% block content6 %}
+				{% endblock %}				
+				
+			</div>
+			<div class="col-sm-3">
+				{% block content7 %}
+				{% endblock %}				
+				
+			</div>
+			<div class="col-sm-3">
+				{% block content8 %}
+				{% endblock %}				
+				
+			</div>		
+		</div>				
+	</div>
+	
+</section>
+
+</body>
+</html>
